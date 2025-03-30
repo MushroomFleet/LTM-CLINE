@@ -1,0 +1,32 @@
+{
+  "name": "ltm-cline",
+  "version": "1.0.0",
+  "description": "Long-term memory for Claude 3.7 using MCP and SQLite",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "ltm",
+    "claude",
+    "memory",
+    "mcp",
+    "sqlite",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "sqlite3": "^5.1.7",
+    "dotenv": "^16.4.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/sqlite3": "^3.1.11",
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  }
+}
