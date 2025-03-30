@@ -29,7 +29,7 @@ LTM-CLINE implements a human-like memory cycle:
 
 ```bash
 # Clone the repository 📋
-git clone https://github.com/yourusername/ltm-cline.git
+git clone https://github.com/mushroomfleet/ltm-cline.git
 cd ltm-cline
 
 # Install dependencies 📥
