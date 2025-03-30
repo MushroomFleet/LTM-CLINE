@@ -241,12 +241,13 @@ class LTMClineServer {
         }
         
         const limit = match[1] ? parseInt(match[1]) : 3;
-        const updates = this.ltm.getRecentUpdates(limit);
+        const updates = await this.ltm.getRecentUpdates(limit);
+        const updatesArray = Array.isArray(updates) ? updates : [];
         
         contents = {
           uri,
           mimeType: 'application/json',
-          text: JSON.stringify(updates.map(update => {
+          text: JSON.stringify(updatesArray.map(update => {
             const diff = update.getDiff();
             return {
               id: update.updateId,
